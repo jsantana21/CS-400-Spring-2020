@@ -1,4 +1,4 @@
-// PS1 Problem 1 (PS1.P1.js)
+// PS1 Problem 2 (PS1.P2.js)
 // DESCRIPTION: Write a function that takes as input each of the following strings in turn:
 // ‘4+2’
 // ‘5*7’
