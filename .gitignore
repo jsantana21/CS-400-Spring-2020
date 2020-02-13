@@ -102,3 +102,4 @@ dist
 
 # TernJS port file
 .tern-port
+PS1/.DS_Store
