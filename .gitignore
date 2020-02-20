@@ -1,7 +1,10 @@
+# file: ~/.gitignore_global
 .DS_Store
-#Node staff
 .idea
+
+#Node staff
 node_modules
+
 # Logs
 logs
 *.log
