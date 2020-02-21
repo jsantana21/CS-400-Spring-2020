@@ -1,6 +1,4 @@
-# file: ~/.gitignore_global
 .DS_Store
-.idea
 
 #Node staff
 node_modules
