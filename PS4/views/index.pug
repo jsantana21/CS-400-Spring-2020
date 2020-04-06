@@ -1,6 +1,9 @@
 extends layout
 
 block content
-    p Welcome to CS 411 Problem Set 4
-    p Head to route ps4 to see the API call
-    p Note: The POST method of the weather data can only be seen on Postman
+    h1 Welcome to the Boston University Weather App
+    p Temperature: #{API_Data.temp_f}°F / #{API_Data.temp_c}°C
+    p Weather Description: #{API_Data.wx_desc}
+    p Actually Feels Like: #{API_Data.feelslike_f}°F / #{API_Data.feelslike_c}°C
+    p Humidity: #{API_Data.humid_pct}%
+    p Wind Speeds: #{API_Data.windspd_mph}mph / #{API_Data.windspd_kmh}kmh
