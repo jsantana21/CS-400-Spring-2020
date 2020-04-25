@@ -15,7 +15,6 @@
 </div>
 
 <div *ngIf="selectedData">
-  <!-- display selected data -->
   <h3>The Temperature in {{selectedData.location}} on Saturday April 18, 2020 was {{selectedData.temp_f}}°F </h3>
   <input type="text" [(ngModel)] = "selectedData.temp_f">
 </div>
