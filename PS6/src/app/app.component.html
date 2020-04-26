@@ -1,0 +1,20 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to the {{ title }}!
+  </h1>
+</div>
+
+<div>
+
+  <ul>
+    <li *ngFor="let data of weather">
+      <label (click)="selectData(data)">{{data.temp_f}} </label>
+    </li>
+  </ul>
+
+</div>
+
+<div *ngIf="selectedData">
+  <h3>The Temperature in {{selectedData.location}} on Saturday April 18, 2020 was {{selectedData.temp_f}}°F </h3>
+  <input type="text" [(ngModel)] = "selectedData.temp_f">
+</div>
