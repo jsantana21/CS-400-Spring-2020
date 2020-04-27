@@ -14,7 +14,7 @@ export class AppComponent {
   // error TS2341: Property 'selectedData' is private and only accessible within class 'AppComponent'.
   // whenever I set 'selectedData' to private
   // The error disappears however when I leave selectedData public
-  private selectedData: WeatherData;
+  selectedData: WeatherData;
 
   selectData(data: WeatherData) {
     this.selectedData = data;
