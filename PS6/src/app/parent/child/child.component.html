@@ -1,0 +1,18 @@
+<!-- Part D: use *ngIf and *ngFor to parse through an iterable
+containing your response data. When no data is present, *ngIf should hide
+that portion of the page.
+Note: If your back-end source returns just one item,
+duplicate it on the back end to present an array of data to the front end (just a
+few duplicates needed to demonstrate *ngFor). -->
+
+<div>
+    <ng-container *ngIf="responseData">
+      <li *ngFor="let weather of responseData">
+         Temperature: {{weather['temp_f']}} °F or {{weather['temp_c']}} °C <br>
+         Weather Description: {{weather['wx_desc']}} <br>
+         Actually Feels Like: {{weather['feelslike_f']}} °F or {{weather['feelslike_c']}} °C <br>
+         Humidity: {{weather['humid_pct']}}% <br>
+         Wind Speeds: {{weather['windspd_mph']}}mph or {{weather['windspd_kmh']}}kmh<br>
+      </li>
+    </ng-container>
+</div>

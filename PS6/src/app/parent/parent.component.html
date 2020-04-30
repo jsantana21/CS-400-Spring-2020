@@ -1,0 +1,14 @@
+Country Abbreviation:
+<label>
+  <input type="text" [(ngModel)]="countryAbbreviation">
+</label>
+<br>
+
+ZipCode:
+<label>
+  <input type="text" [(ngModel)]="zipCode">
+</label>
+<br>
+
+<button (click)="validatedGetWeatherForm(countryAbbreviation, zipCode)">Get Weather</button>
+<app-child [responseData]="responseData"></app-child>

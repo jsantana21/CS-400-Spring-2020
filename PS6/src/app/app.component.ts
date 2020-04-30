@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { WeatherDataArray } from './WeatherData-MOCK';
-import {WeatherData} from './WeatherData';
+import { WeatherService} from './services/weather.service';
 
+// Part C: App Component =  the third component will enclose
+// and be the parent of the form (parent) and results (child) components
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,15 +10,6 @@ import {WeatherData} from './WeatherData';
 })
 export class AppComponent {
   title = 'Weather Angular App';
-  weather = WeatherDataArray;
-  // For some reason, I'm getting this error:
-  // error TS2341: Property 'selectedData' is private and only accessible within class 'AppComponent'.
-  // whenever I set 'selectedData' to private
-  // The error disappears however when I leave selectedData public
-  selectedData: WeatherData;
-
-  selectData(data: WeatherData) {
-    this.selectedData = data;
-
+  constructor() {
   }
 }

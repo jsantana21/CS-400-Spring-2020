@@ -4,17 +4,10 @@
   </h1>
 </div>
 
-<div>
+<app-parent></app-parent>
 
-  <ul>
-    <li *ngFor="let data of weather">
-      <label (click)="selectData(data)">{{data.temp_f}} </label>
-    </li>
-  </ul>
-
-</div>
-
-<div *ngIf="selectedData">
-  <h3>The Temperature in {{selectedData.location}} on Saturday April 18, 2020 was {{selectedData.temp_f}}°F </h3>
-  <input type="text" [(ngModel)] = "selectedData.temp_f">
-</div>
+<p><sub>Please refer to <a href="https://developer.weatherunlocked.com/documentation/localweather/current">
+  this link</a>
+  and scroll down to the PostCode/ZipCode section to know how to enter
+  the Country Abbreviation and ZipCode correctly.<br>
+Ex: Country Abbreviation: us and ZipCode: 02215 returns information on the weather at Boston University's main campus. </sub> </p>
